@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Matrix</string>
+    <string name="science_text">Science: Science offers many career options such as engineering, medical and research roles. It is the most favourite career option for parents and students.</string>
+    <string name="commerce_text">Commerce: Commerce is the second most popular career option after science. Commerce is best for Business. If you are fascinated by numbers, finances, and economics then commerce is for you.</string>
+    <string name="arts_humanities_text">Arts/Humanities: Arts/ Humanities are of those who are interested in academic research. If you are creative and want to dive deep into Humanity, then arts is the stream for you.</string>
+    <string name="iti_text">Arts/Humanities: Arts/Humanities are of those who are interested in academic research. If you are creative and want to dive deep into Humanity, then arts is the stream for you.</string>
+    <string name="poly_text">Polytechnic courses: After class 10th, students can go for polytechnic courses like Mechanical, Civil, Chemical, Computer, Automobile.</string>
 </resources>

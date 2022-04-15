@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "406001511442",
+    "project_id": "cpathauth",
+    "storage_bucket": "cpathauth.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:406001511442:android:69e617627cbc2357a77ccb",
+        "android_client_info": {
+          "package_name": "com.example.matrix"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "406001511442-u5cgvfl82r7hrca7341fka4b998ujt7l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYPhHV79CgjQg3nXEJKEFoIUqGFZ9REYg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "406001511442-u5cgvfl82r7hrca7341fka4b998ujt7l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
