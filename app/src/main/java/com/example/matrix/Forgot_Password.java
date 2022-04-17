@@ -3,6 +3,7 @@ package com.example.matrix;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Patterns;
 import android.view.View;
@@ -67,5 +68,9 @@ public class Forgot_Password extends AppCompatActivity {
                 }
             }
         });
+    }
+
+    public void backFromForgetPass(View view) {
+        startActivity(new Intent(Forgot_Password.this, sign_In.class));
     }
 }

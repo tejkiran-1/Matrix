@@ -21,9 +21,6 @@ import com.google.firebase.database.ValueEventListener;
 public class UserAccountPage extends AppCompatActivity  {
     private TextView userNameTV, userEmailTV;
     private Button logOutButton, deleteAccountButton;
-    private FirebaseUser user;
-    private DatabaseReference databaseReference;
-    private String userID;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,42 +30,10 @@ public class UserAccountPage extends AppCompatActivity  {
         logOutButton = findViewById(R.id.logOutButton);
         deleteAccountButton = findViewById(R.id.deleteAccountButton);
 
-
-        user = FirebaseAuth.getInstance().getCurrentUser();
-        databaseReference = FirebaseDatabase.getInstance().getReference("Users");
-        userID = user.getUid();
-
-
-        databaseReference.child(userID).addListenerForSingleValueEvent(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
-                User userProfile = snapshot.getValue(User.class);
-
-                if (userProfile !=  null) {
-                    String fullName = userProfile.fullName;
-                    String email = userProfile.email;
-                    
-                    userNameTV.setText(fullName);
-                    userEmailTV.setText(email);
-                }
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-                Toast.makeText(UserAccountPage.this, "Something went wrong!", Toast.LENGTH_SHORT).show();
-            }
-        });
-
-
-
-
-
-
-
-
-
-
-
+        String fullName = getIntent().getStringExtra("fName");
+        String email = getIntent().getStringExtra("email");
+        userNameTV.setText(fullName);
+        userEmailTV.setText(email);
 
         logOutButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -84,5 +49,9 @@ public class UserAccountPage extends AppCompatActivity  {
                 Toast.makeText(UserAccountPage.this, "Under Dev", Toast.LENGTH_SHORT).show();
             }
         });
+    }
+
+    public void backFromAccount(View view) {
+        startActivity(new Intent(UserAccountPage.this, Main_Page.class));
     }
 }

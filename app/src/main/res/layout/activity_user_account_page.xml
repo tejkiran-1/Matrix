@@ -186,4 +186,28 @@
             android:textStyle="bold"/>
     </LinearLayout>
 
+    <ImageView
+        android:id="@+id/back_from_Account"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="35dp"
+        android:onClick="backFromAccount"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/chevron_left"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:cardBackgroundColor="@color/white"
+        android:maxWidth="240dp"
+        app:layout_constraintTop_toBottomOf="@+id/userAccountNameTV" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

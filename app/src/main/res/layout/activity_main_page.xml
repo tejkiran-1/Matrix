@@ -216,6 +216,7 @@
                         android:paddingLeft="13dp"
                         android:paddingTop="6dp"
                         android:paddingBottom="6dp"
+                        android:onClick="careerPathSelected"
                         android:text="@string/science_text"
                         android:textColor="@color/black"
                         android:textSize="15sp" />

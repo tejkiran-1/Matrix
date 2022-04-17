@@ -108,4 +108,8 @@ public class sign_In extends AppCompatActivity {
     public void forgotPasswordTextOnClick(View view) {
         startActivity(new Intent(sign_In.this, Forgot_Password.class));
     }
+
+    public void backFromSignIn(View view) {
+        startActivity(new Intent(sign_In.this, Register_Page.class));
+    }
 }

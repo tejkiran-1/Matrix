@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Matrix">
         <activity
+            android:name=".SelectedCareerPath"
+            android:exported="false" />
+        <activity
             android:name=".Main_Page"
             android:exported="false" />
         <activity
